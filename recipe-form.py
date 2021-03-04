@@ -29,3 +29,15 @@ print(new_recipe)
 
 
 subprocess.Popen(["touch", f"Recipe: {new_recipe_name}"])
+
+
+recipe = open("./" + f"Recipe: {new_recipe_name}", "w")
+
+recipe.write(f"{new_recipe_name}" + "\n\n\n")
+recipe.write("Nutritional Info:" + "\n\n")
+recipe.write("Serving Size: " + f"{new_recipe_serving_size}" + "\n")
+recipe.write("Calories: " + f"{new_recipe_calories}" + "\n")
+recipe.write("Carbs: " + f"{new_recipe_carbs}" + "\n")
+recipe.write("Protein: " + f"{new_recipe_protein}" + "\n")
+
+recipe.close()
