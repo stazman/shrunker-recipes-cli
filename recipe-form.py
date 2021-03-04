@@ -1,3 +1,6 @@
+import subprocess
+
+
 new_recipe = dict()
 
 new_recipe_name = input("Enter the name of the recipe: ")
@@ -23,3 +26,6 @@ new_recipe.update({"protein": new_recipe_protein})
 print(new_recipe_name)
 
 print(new_recipe)
+
+
+subprocess.Popen(["touch", f"Recipe: {new_recipe_name}"])
