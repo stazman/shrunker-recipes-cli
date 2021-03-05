@@ -1,6 +1,3 @@
-import subprocess
-
-
 new_recipe = dict()
 
 new_recipe_name = input("Enter the name of the recipe: ")
@@ -27,10 +24,6 @@ print(new_recipe_name)
 
 print(new_recipe)
 
-
-# subprocess.Popen(["touch", f"Recipe: {new_recipe_name}"])
-
-# Note: a Bash command in a subprocess is doable to create a file from the Python code, but it's not necessary because the "w" parameter in the open() method creates a file if the one specified to be opened doesn't exist
 
 recipe = open("./" + f"Recipe: {new_recipe_name}", "w")
 

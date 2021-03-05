@@ -1,5 +1,5 @@
-Make simple recipe form
+X Make simple recipe form
 
-Create a database to persist recipe info
+Create a MySQL database to persist recipe info
 
 Make a form that returns recipes based on nutritional parameters
